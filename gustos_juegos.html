@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Formulario gustos gamers</title>
+</head>
+<body>
+    <!-- CABECERA -->
+    <header>
+        <img src="./img/logo_juego.jpg" alt="Logo consolas">
+    </header>
+    <!-- FIN CABECERA -->
+    <!-- MAIN -->
+    <main>
+         <!-- MENSAJE ERROR -->
+         <div id="error">
+            <h2></h2>
+        </div>
+        <!-- FIN MENSAJE ERROR -->
+        <!-- FORMULARIO -->
+        <form action="#" id="formulario">
+            <div class="itemform">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" required onclick="nombre()">
+            </div>
+            <div class="itemform">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="itemform">
+                <label for="edad">Edad</label>
+                <select name="edad" id="edad">
+                    <option value="0">--Rango de edad--</option>
+                    <option value="1">menor a 12 años</option>
+                    <option value="2">12 a 18 años</option>
+                    <option value="3">19 a 30 años</option>
+                    <option value="4">30 a 60 años</option>
+                </select>
+            </div>
+            <div class="itemform">
+                <label for="plataforma">Plataforma de juego</label>
+                <select name="plataforma" id="plataforma">
+                    <option value="0">--Plataforma de juego--</option>
+                    <option value="1">Playstation</option>
+                    <option value="2">Xbox</option>
+                    <option value="3">Nintendo</option>
+                    <option value="4">PC</option>
+                    <option value="4">Mobile</option>
+                </select>
+            </div>
+            <div class="itemform">
+                <label for="videojuego">Videojuego más jugado</label>
+                <input type="text" name="videojuego" id="videojuego" minlength="2">
+            </div>
+            <div class="itemform">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+        <!-- FIN FORMULARIO -->
+    </main>
+    <!-- FIN MAIN -->
+    <!-- FOOTER -->
+    <footer>
+        <p>Formulario gustos gamers</p>
+    </footer>
+    <!-- FIN FOOTER -->
+    <!-- CÓDIGO JS -->
+    <script src="./js/app.js"></script>
+</body>
+</html>
